@@ -1,0 +1,4 @@
+site/
+.pixi/
+*.pyc
+__pycache__/

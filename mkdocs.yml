@@ -1,0 +1,100 @@
+site_name: "Machine Learning and Deep Learning for Chemists"
+site_description: "A chemistry-first guide from basic concepts to modern models"
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - content.code.copy
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - "⚡ Grand Decision Workflow": decision-workflow.md
+  - "Part I — Learning to Think in ML as a Chemist":
+    - "1. What Machine Learning Is": 01-what-machine-learning-is.md
+    - "2. Chemical Data": 02-chemical-data.md
+    - "3. Chemical Questions → ML Tasks": 03-turning-chemical-questions-into-ml-tasks.md
+  - "Part II — Representing Chemistry for a Machine":
+    - "4. Why Representation Comes First": 04-why-representation-comes-before-model-choice.md
+    - "5. Molecular Descriptors": 05-molecular-descriptors.md
+    - "6. Fingerprints and Similarity": 06-fingerprints-and-similarity.md
+    - "7. SMILES as Chemical Language": 07-smiles-as-chemical-language.md
+    - "8. Molecular Graphs": 08-molecular-graphs.md
+    - "9. 3D Structure and Geometry": 09-3d-structure-and-geometry.md
+  - "Part III — Classical Machine Learning":
+    - "10. Baselines First": 10-baselines-first.md
+    - "11. Linear Models": 11-linear-models.md
+    - "12. Nearest Neighbors": 12-nearest-neighbors.md
+    - "13. Trees, Forests, and Boosting": 13-trees-forests-boosting.md
+    - "14. Support Vector Machines": 14-support-vector-machines.md
+  - "Part IV — Evaluating Models Like a Scientist":
+    - "15. Train, Validation, and Test Sets": 15-train-validation-test.md
+    - "16. Why Random Splits Mislead": 16-why-random-splits-mislead.md
+    - "17. Metrics That Match the Decision": 17-metrics-that-match.md
+    - "18. Overfitting and Generalization": 18-overfitting-underfitting-generalization.md
+    - "19. Interpretability and Explanations": 19-interpretability.md
+  - "Part V — Neural Networks Without the Fear":
+    - "20. What a Neural Network Is": 20-what-a-neural-network-is.md
+    - "21. Dense Networks on Descriptors": 21-dense-neural-networks.md
+    - "22. Learned Representations": 22-learned-representations.md
+  - "Part VI — Deep Learning by Representation":
+    - "23. Sequence Models": 23-sequence-models.md
+    - "24. Graph Neural Networks": 24-graph-neural-networks.md
+    - "25. 3D Deep Learning": 25-3d-deep-learning.md
+    - "26. Convolutional Models": 26-convolutional-models.md
+    - "27. Multimodal Learning": 27-multimodal-learning.md
+  - "Part VII — Advanced Concepts":
+    - "28. Transfer Learning": 28-transfer-learning.md
+    - "29. Uncertainty and Applicability Domain": 29-uncertainty-applicability-domain.md
+    - "30. Active Learning": 30-active-learning.md
+    - "31. Imbalanced Data": 31-imbalanced-data.md
+    - "32. Generative Models": 32-generative-models.md
+    - "33. Reaction Prediction": 33-reaction-prediction.md
+    - "34. Protein–Ligand Learning": 34-protein-ligand-learning.md
+    - "35. ML for Simulation": 35-ml-for-simulation.md
+  - "Part VIII — Scientific Judgment and Practice":
+    - "36. Choosing the Right Model": 36-choosing-the-right-model.md
+    - "37. Common Failure Modes": 37-common-failure-modes.md
+    - "38. Reproducibility": 38-reproducibility.md
+    - "39. Reading ML Papers": 39-reading-ml-papers.md
+    - "40. End-to-End Workflow": 40-end-to-end-workflow.md
+  - "Part IX — Case Studies":
+    - "41. Solubility Prediction": 41-case-study-solubility.md
+    - "42. Bioactivity Screening": 42-case-study-bioactivity.md
+    - "43. Reaction Yield": 43-case-study-reaction-yield.md
+    - "44. Active Learning": 44-case-study-active-learning.md
+    - "45. First GNN": 45-case-study-gnn.md
+  - Appendices:
+    - "A. Minimal Math": appendix-a-minimal-math.md
+    - "B. Minimal Statistics": appendix-b-minimal-statistics.md
+    - "C. Vocabulary": appendix-c-vocabulary.md
+    - "D. Representations at a Glance": appendix-d-representations.md
+    - "E. Model Families at a Glance": appendix-e-model-families.md
+    - "F. Metrics Cheat Sheet": appendix-f-metrics-cheat-sheet.md
+    - "G. Python Stack": appendix-g-python-stack.md
